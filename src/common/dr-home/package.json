@@ -1,0 +1,11 @@
+{
+  "name": "@dr/dr-home",
+  "version": "0.0.0",
+  "description": "Home page with angular route provider",
+  "main": "browser/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "LJ",
+  "license": "ISC"
+}
