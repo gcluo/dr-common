@@ -1,0 +1,9 @@
+{
+  "name": "@dr/common-recipe",
+  "version": "0.0.0",
+  "description": "Recipe package of common-recipe",
+  "dependencies": {
+    "@dr/dr-home": "0.0.0",
+    "@dr/example-home": "0.0.0"
+  }
+}
