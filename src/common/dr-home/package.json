@@ -2,7 +2,10 @@
   "name": "@dr/dr-home",
   "version": "0.0.0",
   "description": "Home page with angular route provider",
-  "main": "browser/index.js",
+  "browser": "browser/js/index.js",
+  "dr": {
+	"bundle": "dr-common"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

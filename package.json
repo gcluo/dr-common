@@ -16,7 +16,8 @@
     "url": "https://github.com/dr-web-house/dr-common/issues"
   },
   "homepage": "https://github.com/dr-web-house/dr-common#readme",
-  "devDependencies": {
-    "web-fun-house": ">=0.0.18"
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "web-fun-house": ">=0.0.20"
   }
 }

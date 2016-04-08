@@ -1,19 +1,18 @@
 {
-  "name": "@dr/example-entry",
-  "version": "1.0.12",
+  "name": "@dr/example-home",
+  "version": "0.0.0",
   "description": "sample node package",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "browser": "browser/js/index.js",
-  "main": "server/main.js",
   "style": "less/main.less",
   "transforms": [
     "@dr/parcelify-module-resolver"
   ],
   "dr": {
     "bundle": "example",
-    "entryView": "index.html"
+    "entryPage": "npm://@dr/dr-home/index.html"
   },
   "author": "jing.liu.fe@d.com",
   "license": "ISC"
