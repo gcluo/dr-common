@@ -3,6 +3,5 @@ module.exports = function(module) {
 };
 
 function MainController($scope) {
-	var mainVm = this;
-	mainVm.time = new Date().getTime();
+	
 }

@@ -1,20 +1,33 @@
 require('@dr/angularjs');
+require('@dr/ui-router');
 
-var drHome = angular.module('drHome', ['ngAnimate', 'ngRoute', 'ngSanitize']);
+var drHome = angular.module('drHome', ['ui.router']);
+
 module.exports = {
 	bootstrap: bootstrap,
 	name: drHome.name
 };
 
-// drHome.config(['$routeProvider', '$controllerProvider', '$compileProvider', '$filterProvider', '$provide',
-// 	function($routeProvider, $controllerProvider, $compileProvider, $filterProvider, $provide) {
-//
-// 	}
-// ]);
-// drHome
-// .run(['$templateCache', function($templateCache) {
-// 		$templateCache.put('screens.html', require('../views/screens.html'));
-// 	}]);
+drHome.config([
+	'$stateProvider', '$urlRouterProvider',
+	function($stateProvider, $urlRouterProvider) {
+		$urlRouterProvider.otherwise("/");
+
+		$stateProvider
+			.state('state', {
+				url: "/state",
+				templateUrl: "/example-home/partials/state.html"
+			})
+			.state('state.list', {
+				url: "/list",
+				templateUrl: "/example-home/partials/state.list.html",
+				controller: ['$scope', function($scope) {
+					$scope.items = ["A", "List", "Of", "Items"];
+				}]
+			});
+	}
+]);
+
 require('./controllers/HomeMainController')(drHome);
 
 function bootstrap(moduleName) {

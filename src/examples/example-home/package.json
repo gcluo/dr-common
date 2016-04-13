@@ -12,7 +12,8 @@
   ],
   "dr": {
     "bundle": "example",
-    "entryPage": "npm://@dr/dr-home/index.html"
+    "entryPage": "npm://@dr/dr-home/index.html",
+    "assetsDir": "assets"
   },
   "author": "jing.liu.fe@d.com",
   "license": "ISC"
