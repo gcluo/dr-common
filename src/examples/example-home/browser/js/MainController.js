@@ -3,5 +3,4 @@ module.exports = function(module) {
 };
 
 function MainController($scope) {
-	
 }
