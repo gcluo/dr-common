@@ -1,6 +1,8 @@
 require('@dr/angularjs');
 require('@dr/ui-router');
 
+var state = require('../../browser/view/state.html');
+
 var drHome = angular.module('drHome', ['ui.router']);
 
 module.exports = {
@@ -15,14 +17,14 @@ drHome.config([
 
 		$stateProvider
 			.state('state', {
-				url: "/state",
-				templateUrl: "/example-home/partials/state.html"
+				url: '/state',
+				template: state
 			})
 			.state('state.list', {
-				url: "/list",
-				templateUrl: "/example-home/partials/state.list.html",
+				url: '/list',
+				templateUrl: '/example-home/partials/state.list.html',
 				controller: ['$scope', function($scope) {
-					$scope.items = ["A", "List", "Of", "Items"];
+					$scope.items = ['A', 'List', 'Of', 'Items'];
 				}]
 			});
 	}
