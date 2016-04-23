@@ -1,7 +1,8 @@
 packageContextPathMapping:
-    example-i18n1: /
+    example-home: /
 recipeSrcMapping:
-    common-recipe: src
+    common-recipe: src/common
+    common-example-recipe: src/examples
 
 # Manually set bundle file name for 3rd-party libaraies, otherwise browserify
 # will bundle them with every package that depends on them.

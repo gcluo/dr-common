@@ -18,7 +18,9 @@
   "homepage": "https://github.com/dr-web-house/dr-common#readme",
   "dependencies": {
     "gulp": "^3.9.1",
-    "jasmine": "^2.4.1",
-    "web-fun-house": ">=0.0.20"
+    "web-fun-house": "0.0.27"
+  },
+  "devDependencies": {
+    "jasmine": "^2.4.1"
   }
 }
