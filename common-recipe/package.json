@@ -4,6 +4,7 @@
   "description": "Recipe package of common-recipe",
   "dependencies": {
     "@dr/dr-home": "0.0.0",
+    "@dr/dr-less": "0.0.0",
     "@dr/ui-router": "0.0.1"
   }
 }

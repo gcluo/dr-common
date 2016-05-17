@@ -5,3 +5,7 @@ node_modules
 config.local.yaml
 /dist
 dist
+common-example-recipe
+common-recipe
+mygulpfile.js
+common-recipe/package.json

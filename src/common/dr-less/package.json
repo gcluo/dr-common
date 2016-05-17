@@ -1,0 +1,11 @@
+{
+  "name": "@dr/dr-less",
+  "version": "0.0.0",
+  "description": "dr ",
+  "style": "less/main.less",
+  "dr": {
+	   "bundle": "dr-common"
+  },
+  "author": "LGC",
+  "license": "ISC"
+}
