@@ -11,7 +11,7 @@
     "@dr/parcelify-module-resolver"
   ],
   "dr": {
-    "bundle": "example",
+    "bundle": "example-home",
     "entryPage": "npm://@dr/dr-home/index.html",
     "assetsDir": "assets"
   },

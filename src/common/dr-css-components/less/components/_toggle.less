@@ -1,0 +1,130 @@
+.toggle-button {
+  display: inline-block;
+
+  >input[type=checkbox] {
+    display: none;
+
+    &:checked + .label {
+      background-color: @green;
+
+      &:before {
+        left: 37px;
+      }
+
+    }
+
+    &:disabled + label {
+      background-color: @grey-lighter;
+    }
+
+  }
+
+  .label {
+    display: inline-block;
+    width: 80px;
+    height: 35px;
+    background-color: @grey-lighter;
+    .border-radius(17px);
+    cursor: pointer;
+    position: relative;
+
+    &:before {
+      width: 40px;
+      height: 30px;
+      margin-top: -15px;
+      content: '';
+      background-color: @white;
+      border-radius: 15px;
+      position: absolute;
+      left: 3px;
+      top: 50%;
+      transition: left .5s;
+    }
+
+  }
+
+}
+
+.toggle-button {
+  color: @grey-light;
+  font-size: @font-size-base;
+  position: relative;
+
+  &.up,
+  &.down {
+    &:before {
+      width: 8px;
+      height: 8px;
+      content: '';
+      border-left: 2px solid @grey-light;
+      border-bottom: 2px solid @grey-light;
+      position: absolute;
+      right: -16px;
+      top: 50%;
+    }
+
+  }
+
+  &.down {
+    &:before {
+      margin-top: -6px;
+      transform: rotate(-45deg);
+    }
+
+  }
+
+  &.up {
+    &:before {
+      margin-top: -3px;
+      transform: rotate(135deg);
+    }
+
+  }
+
+}
+
+.toggle-panel {
+  border: 1px solid @grey-lightest;
+
+  .panel-header {
+    .center-height(50px);
+    padding: 0 30px;
+    background-color: @grey-cell;
+    font-size: @font-size-h6;
+    color: @grey-dark;
+    position: relative;
+
+    &:before {
+      width: 0;
+      height: 0;
+      margin-top: -7px;
+      content: '';
+      border-left: 10px solid transparent;
+      border-top: 14px solid @grey-dark;
+      border-right: 10px solid transparent;
+      position: absolute;
+      right: 40px;
+      top: 50%;
+    }
+
+    &.active {
+      &:before {
+        border-top: 0;
+        border-bottom: 14px solid @grey-dark;
+      }
+
+    }
+
+    &.active + .panel-body {
+      display: block;
+    }
+
+  }
+
+  .panel-body {
+    display: none;
+    min-height: 50px;
+    background-color: @white;
+  }
+
+}

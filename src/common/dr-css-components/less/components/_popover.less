@@ -1,0 +1,72 @@
+.popover-tooltips,
+.popover-prompts {
+  display: inline-block;
+  position: relative;
+}
+
+.popover-tooltips {
+  min-height: 50px;
+  padding: 6px 10px;
+  background-color: @green-lighter;
+  .border-radius(@btn-radius-base);
+  color: @grey-darker;
+
+  &:before {
+    width: 0;
+    height: 0;
+    margin-top: -13px;
+    border-top: 10px solid transparent;
+    border-right: 14px solid @green-lighter;
+    border-bottom: 10px solid transparent;
+    content: '';
+    position: absolute;
+    left: -14px;
+    top: 50%;
+  }
+
+  .message {
+    .center-height(25px);
+    font-size: @font-size-sm;
+
+    &>.iconfont {
+      padding-right: 6px;
+      font-size: @font-size-h6;
+    }
+
+    &>.icon-wrong {
+      color: @red-dark;
+    }
+
+    &>.icon-success {
+      color: @green;
+    }
+
+  }
+
+}
+
+.popover-prompts {
+  .center-height(48px);
+  padding: 0 50px 0 30px;
+  background-color: @yellow-light;
+  color: @yellow-dark;
+  font-size: @font-size-base;
+
+  .icon-close {
+    line-height: 20px;
+    margin-top: -10px;
+    color: @yellow-dark;
+    cursor: pointer;
+    font-size: @font-size-h4;
+    position: absolute;
+    top: 50%;
+    right: 30px;
+  }
+
+  .config {
+    color: @yellow-dark;
+    cursor: pointer;
+    font-size: @font-size-base;
+  }
+
+}

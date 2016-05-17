@@ -1,0 +1,38 @@
+.search-bar {
+  color: @grey-light;
+  
+  .search {
+    height: 40px;
+    padding: 0 16px;
+    border: 1px solid @grey-lighter;
+    font-size: @font-size-base;
+    float: left;
+
+    &:focus {
+      border: 1px solid @green;
+    }
+
+    &.searched {
+      color: @grey-darker;
+    }
+
+    &:focus + .bar {
+      border: 1px solid @green;
+      border-left: 0;
+      color: @green;
+    }
+
+  }
+
+  .bar {
+    width: 40px;
+    .center-height(40px);
+    border: 1px solid @grey-lighter;
+    border-left: 0;
+    font-family: 'iconfont';
+    font-size: @font-size-h5;
+    float: left;
+    text-align: center;
+  }
+
+}

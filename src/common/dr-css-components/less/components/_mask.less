@@ -1,0 +1,120 @@
+.mask {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .75);
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.modals-dialog,
+.modals-status {
+  margin: auto;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.modals-dialog {
+  min-height: 70px;
+  background-color: @white;
+  border: 1px solid @grey-lighter;
+
+  .modal-close {
+    position: absolute;
+  }
+
+  .modal-header {
+    height: 70px;
+    line-height: 38px;
+    margin: 0;
+    padding: 16px;
+    color: @grey-darker;
+    font-size: @font-size-h5;
+    text-align: center;
+    position: relative;
+
+    .close {
+      margin-top: -5px;
+      color: @green;
+      cursor: pointer;
+      float: right;
+
+      &:hover {
+        color: @grey-darker;
+      }
+
+    }
+
+  }
+
+  .modal-body {
+    padding: 30px 40px;
+    border-top: 1px solid @grey-lighter;
+    font-size: @font-size-base;
+
+    .config {
+      width: 100%;
+      margin-top: 40px;
+      font-size: @font-size-h6;
+    }
+
+  }
+
+}
+
+.modals-status {
+  height: 50px;
+  line-height: 22px;
+  padding: 14px;
+  background-color: @green-lighter;
+  .border-radius(4px);
+
+  .message {
+    font-size: @font-size-lg;
+    margin-left: 10px;
+  }
+
+  .upload-mask-error {
+    background-color: rgba(215, 12, 24, .1);
+  }
+
+  .success,
+  .error {
+    width: 24px;
+    .center-height(24px);
+    text-align: center;
+  }
+
+  .success {
+    >.icon-success {
+      color: @green;
+      font-size: @font-size-h5;
+    }
+
+  }
+
+  .error {
+    >.icon-wrong {
+      color: @red-dark;
+      font-size: @font-size-h3;
+    }
+
+  }
+
+}
+
+.modal-lg {
+  width: 640px;
+}
+
+.modal-md {
+  width: 480px;
+}
+
+.modal-xs {
+  width: 240px;
+}

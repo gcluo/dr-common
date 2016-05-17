@@ -1,0 +1,65 @@
+.panel,
+.panel-tab,
+.panel-list {
+  border: 1px solid @grey-lighter;
+  font-size: @font-size-h6;
+  color: @grey-darker;
+
+  .panel-header {
+    .center-height(60px);
+    padding: 0 22px;
+    border-bottom: 1px solid @grey-lighter;
+  }
+
+  .panel-body {
+    min-height: 80px;
+  }
+
+}
+
+.panel {
+  .panel-header {
+    font-size: @font-size-h4;
+  }
+
+}
+
+.panel-tab {
+  .panel-header {
+    padding: 0;
+  }
+
+  .header-tab-highlight {
+    >li {
+      width: 112px;
+      text-align: center;
+      float: left;
+
+      &:hover,
+      &.active {
+        a> {
+          border-bottom: 3px solid @green;
+          color: @green;
+        }
+
+      }
+
+      >a {
+        display: inline-block;
+        height: 60px;
+        padding: 0 4px;
+        color: @grey-darker;
+      }
+
+    }
+
+  }
+
+}
+
+.panel-list {
+  .highlight {
+    color: @green;
+  }
+
+}

@@ -1,0 +1,334 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>css style</title>
+    <meta name="description" content="Your description.">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Your title">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <style>
+      .section-title {
+        margin: 30px 0 10px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #ccc;
+      }
+      .section-demo-list > li {
+        margin:10px 0;
+      }
+    </style>
+    <script type="text/javascript">
+      function showdialog(){
+        var dialog = document.getElementById('dialog');
+        dialog.style.display = 'block';
+        dialog.classList += ' in';
+      }
+      function closedialog(){
+        var dialog = document.getElementById('dialog');
+        function dnone(){
+          dialog.style.display = 'none';
+          dialog.removeEventListener("webkitTransitionEnd", dnone, false);
+        }
+        dialog.addEventListener("webkitTransitionEnd", dnone, false);
+        dialog.classList.toggle('in');
+      }
+      function showUploadMask(){
+        var upload = document.getElementById('upload');
+        upload.style.display = 'block';
+        upload.classList += ' in';
+      }
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="section-title">btn</div>
+      <ul class="section-demo-list">
+        <li>
+          <button type="button" name="button" class="btn-secondary" onclick="showdialog()">显示对话框模态框</button>
+          <button type="button" name="button" class="btn-secondary disable">Normal</button>
+        </li>
+        <li>
+          <button type="button" name="button" class="btn-primary" onclick="showUploadMask()">显示上传模态框</button>
+          <button type="button" name="button" class="btn-primary disable">Normal</button>
+        </li>
+        <li>
+          <span class="btn-default">Normal</span>
+          <span class="btn-default disable">Normal</span>
+        </li>
+        <li>
+          <button type="button" name="button" class="btn-secondary-outline">Normal</button>
+          <button type="button" name="button" class="btn-secondary-outline disable">Normal</button>
+        </li>
+        <li>
+          <button type="button" name="button" class="btn-primary-outline">Normal</button>
+          <button type="button" name="button" class="btn-primary-outline disable">Normal</button>
+        </li>
+        <li>
+          <button type="button" name="button" class="btn-default-outline">Normal</button>
+          <button type="button" name="button" class="btn-default-outline disable">Normal</button>
+        </li>
+      </ul>
+
+      <div class="section-title">nav</div>
+      <ul class="section-demo-list">
+        <li>
+          <ul class="nav-bar clearfix">
+            <li class="active"><a href="">首页</a></li>
+            <li><a href="">我要投资</a></li>
+            <li><a href="">我要借款</a></li>
+            <li><a href="">关于点融</a></li>
+            <li><a href="">点融社区</a></li>
+            <li><a href="">我的账户</a></li>
+          </ul>
+        </li>
+        <li>
+          <ul class="nav-tab-highlight sub clearfix">
+            <li class="active"><a href="">Highlight</a></li>
+            <li><a href="">Normal</a></li>
+            <li><a href="">Normal</a></li>
+          </ul>
+        </li>
+        <li>
+          <ul class="nav-tab-highlight clearfix">
+            <li class="active"><a href="">Highlight</a></li>
+            <li><a href="">Normal</a></li>
+            <li><a href="">Normal</a></li>
+          </ul>
+        </li>
+        <li>
+          <ul class="nav-sidebar">
+            <li class="active"><a href="">技术部</a></li>
+            <li><a href="">风险控制部</a></li>
+            <li><a href="">销售部（贷款端）</a></li>
+            <li><a href="">财富管理部</a></li>
+            <li><a href="">市场部</a></li>
+            <li><a href="">运营部</a></li>
+            <li><a href="">产品部</a></li>
+            <li><a href="">财务部</a></li>
+            <li><a href="">业务拓展部</a></li>
+            <li><a href="">合规部</a></li>
+          </ul>
+        </li>
+      </ul>
+
+
+      <div class="section-title">panel</div>
+      <ul class="section-demo-list">
+        <li>
+          <div class="panel">
+            <div class="panel-header">
+              <span>团团赚总投资数据</span>
+            </div>
+            <div class="panel-body"></div>
+          </div>
+        </li>
+        <li>
+          <div class="panel-tab">
+            <div class="panel-header">
+              <ul class="header-tab-highlight clearfix">
+                <li class="active"><a href="">Highlight</a></li>
+                <li><a href="">Normal</a></li>
+                <li><a href="">Normal</a></li>
+                <li><a href="">Normal</a></li>
+                <li><a href="">Normal</a></li>
+                <li><a href="">Normal</a></li>
+              </ul>
+            </div>
+            <div class="panel-body"></div>
+          </div>
+        </li>
+        <li>
+          <div class="panel-list">
+            <div class="panel-header">
+              <span class="highlight">账户总览</span>
+              <span>>收益记录</span>
+            </div>
+            <div class="panel-body"></div>
+          </div>
+        </li>
+      </ul>
+
+      <div class="section-title">input</div>
+      <ul class="section-demo-list">
+        <li>
+          <input class="input-normal" type="text">
+          <input class="input-normal error" type="text" value="45645464">
+          <input class="input-normal" disabled="disabled" value='123456789' type="text">
+          <span class="input-lock">
+            <input class="input-normal disable" disabled="disabled" value='123456789' type="text">
+          </span>
+        </li>
+        <li>
+          <label class="check-box">
+            <input type="checkbox" value="">
+            <span class="label"></span>
+            aaaa
+          </label>
+          <label class="check-box">
+            <input type="checkbox" disabled="disabled" value="">
+            <span class="label"></span>
+            bbbb
+          </label>
+          <label class="check-radio">
+            <input type="radio" value="">
+            <span class="label"></span>
+            cccc
+          </label>
+          <label class="check-radio">
+            <input type="radio" disabled="disabled" value="">
+            <span class="label"></span>
+            dddd
+          </label>
+        </li>
+      </ul>
+
+
+      <div class="section-title">popover</div>
+      <ul class="section-demo-list">
+        <li>
+          <div class="popover-tooltips">
+            <div class="message">
+              <i class="iconfont icon-wrong"></i>
+              8位以上字符
+            </div>
+            <div class="message">
+              <i class="iconfont icon-success"></i>
+              数字和字母的组合
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="popover-prompts">
+            <span>解绑银行卡将影响您的定投团投资，请于XXXX年XX月XX日前重新绑定银行卡</span>
+            <i class="iconfont icon-close"></i>
+          </div>
+          <br />
+          <br />
+          <div class="popover-prompts">
+            <span>您还未设置定投代扣银行卡，将影响定投团投资，<a href="" class="config">点击此去设置></a></span>
+          </div>
+        </li>
+      </ul>
+
+      <div class="section-title">search</div>
+      <ul class="section-demo-list">
+        <li>
+          <div class="search-bar clearfix">
+            <input type="text" class="search">
+            <span class="icon-search bar"></span>
+          </div>
+        </li>
+        <li>
+          <div class="search-bar clearfix">
+            <input type="text" class="search searched">
+            <span class="icon-search bar"></span>
+          </div>
+        </li>
+      </ul>
+      
+      <div class="section-title">toggle</div>
+      <ul class="section-demo-list">
+        <li>
+          <label class="toggle-button">
+            <input type="checkbox" />
+            <span class="label"></span>
+          </label>
+        </li>
+        <li>
+          <span class="toggle-button down">历史持有团记录</span>
+        </li>
+        <li>
+            <span class="toggle-button up">历史持有团记录</span>
+        </li>
+        <li>
+          <div class="toggle-panel">
+            <div class="panel-header">
+              <span>高级软件工程师</span>
+            </div>
+            <div class="panel-body"></div>
+          </div>
+        </li>
+        <li>
+          <div class="toggle-panel">
+            <div class="panel-header active">
+              <span>高级软件工程师</span>
+            </div>
+            <div class="panel-body"></div>
+          </div>
+        </li>
+      </ul>
+      
+      <div class="section-title">pagination</div>
+      <ul class="section-demo-list">
+        <li>
+          <div class="pagination">
+            <a class="prev off" href=""></a>
+            <a class="page active" href="">1</a>
+            <a class="page" href="">2</a>
+            <a class="page" href="">3</a>
+            <a class="page" href="">4</a>
+            <a class="page" href="">...</a>
+            <a class="page" href="">23</a>
+            <a class="next" href=""></a>
+            <input class="page-input" type="text" />
+          </div>
+        </li>
+      </ul>
+      
+      <div class="section-title">select</div>
+      <ul class="section-demo-list">
+        <li>
+          <div class="select">
+            <div class="select-header">开户省</div>
+            <ul class="select-body">
+              <li>北京市</li>
+              <li>上海市</li>
+              <li>西藏市</li>
+              <li>黑龙江省</li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <div class="select">
+            <div class="select-header active selected">北京市</div>
+            <ul class="select-body">
+              <li class="selected">北京市</li>
+              <li>上海市</li>
+              <li>西藏市</li>
+              <li>黑龙江省</li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+
+      <div class="mask fade" id="dialog">
+        <div class="modals-dialog modal-md" style="height:385px;">
+          <h3 class="modal-header">
+            <span class="close" onclick="closedialog()">×</span>
+            您还未设置交易密码
+          </h3>
+          <div class="modal-body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <button type="button" name="button" class="btn-default config">去设置</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="mask fade" id="upload">
+        <div class="modals-status modal-xs">
+          <span class="success">
+            <i class="iconfont icon-success"></i>
+          </span>
+          <span class="error hidden">
+            <i class="iconfont icon-wrong"></i>
+          </span>
+          <strong class="message">图片上传中，请耐心等待</strong>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "description": "Recipe package of common-recipe",
   "dependencies": {
+    "@dr/dr-css-components": "0.0.0",
     "@dr/dr-home": "0.0.0",
-    "@dr/dr-less": "0.0.0",
     "@dr/ui-router": "0.0.1"
   }
 }

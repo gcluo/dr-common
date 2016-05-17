@@ -1,0 +1,71 @@
+.pagination {
+  .page,
+  .prev,
+  .next {
+    display: inline-block;
+    width: 26px;
+    .center-height(26px);
+    text-align: center;
+  }
+
+  .page {
+    margin: 0 6px;
+    .border-radius(2px);
+    color: @grey-light;
+    font-size: @font-size-base;
+
+    &:hover,
+    &:focus {
+      background-color: @grey-lightest;
+    }
+
+    &.active {
+      background-color: @grey-light;
+      color: @white;
+    }
+
+  }
+
+  .prev,
+  .next {
+    color: @grey;
+    font-family: 'iconfont';
+    font-size: @font-size-base;
+  }
+
+  .prev {
+    &:before {
+      content: '\e606';
+    }
+
+  }
+
+  .next {
+    transform: rotate(180deg);
+
+    &:before {
+      content: '\e606';
+    }
+
+  }
+
+  .page-input {
+    width: 48px;
+    height: 26px;
+    border: 1px solid @grey-lighter;
+    .border-radius(2px);
+    color: @grey-darker;
+    text-align: center;
+
+    &:focus {
+      border: 1px solid @green;
+    }
+
+  }
+
+  .off {
+    color: @grey-lightest;
+    cursor: default;
+  }
+
+}

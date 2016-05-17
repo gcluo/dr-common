@@ -1,0 +1,20 @@
+{
+  "name": "@dr/dr-css-components",
+  "version": "0.0.0",
+  "description": "css common package",
+  "style": "less/main.less",
+  "browser": "browser/js/index.js",
+  "transforms": [
+    "@dr/parcelify-module-resolver"
+  ],
+  "dr": {
+    "bundle": "dr-common",
+    "entryPage": "index.html",
+    "assetsDir": "assets"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "LGC",
+  "license": "ISC"
+}
