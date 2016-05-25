@@ -4,15 +4,13 @@
   "description": "css common package",
   "style": "less/main.less",
   "browser": "browser/js/index.js",
-  "main": "server.js",
   "transforms": [
     "@dr/parcelify-module-resolver"
   ],
   "dr": {
     "bundle": "dr-common",
     "entryPage": "index.html",
-    "assetsDir": "assets",
-    "type": "server"
+    "assetsDir": "assets"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

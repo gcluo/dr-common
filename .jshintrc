@@ -74,6 +74,7 @@
 		"Linear": false,
 		"Power2": false,
 		"TimelineLite": false,
-		"angular": true
+		"angular": true,
+		"beforeAll": false
     }
 }

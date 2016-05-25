@@ -4,6 +4,7 @@
   "description": "common components based on web-fun-house",
   "main": "app.js",
   "scripts": {
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,9 +19,10 @@
   "homepage": "https://github.com/dr-web-house/dr-common#readme",
   "dependencies": {
     "gulp": "^3.9.1",
-    "web-fun-house": "^0.1.0"
+    "web-fun-house": "^0.1.1"
   },
   "devDependencies": {
+    "@dr/e2etest-helper": "0.0.4",
     "jasmine": "^2.4.1",
     "selenium-webdriver": "^2.53.2"
   }
